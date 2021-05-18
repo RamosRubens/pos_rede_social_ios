@@ -22,11 +22,6 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postBody: UILabel!
     @IBOutlet weak var userPostLabel: UILabel!
     
-//    @IBOutlet weak var onLike: UIButton!
-//    @IBOutlet weak var onComment: UIButton!
-//    @IBOutlet weak var onExport: UIButton!
-//    @IBOutlet weak var onSave: UIButton!
-    
     @IBAction func onLike(_ sender: UIButton){
         
     }
@@ -44,7 +39,7 @@ class PostTableViewCell: UITableViewCell {
     }
     
     static func register(inside tableView: UITableView){
-        let nib = UINib(nibName: kreuseIdentifier, bundle: Bundle(for: PostTableViewCell.self))
+        let nib = UINib(nibName: "PostTableViewCell", bundle: Bundle(for: PostTableViewCell.self))
         tableView.register(nib, forCellReuseIdentifier: kreuseIdentifier)
     }
     
@@ -52,7 +47,9 @@ class PostTableViewCell: UITableViewCell {
         postBody.text = data
         
         profilePictureImageView.image = UIImage(data: try! Data(contentsOf: URL(string: "https://picsum.photos/120/120")!))
-        
+        profilePictureImageView.layer.masksToBounds = true
+        profilePictureImageView.layer.cornerRadius = profilePictureImageView.bounds.width / 2
+
         let width = Int(UIScreen.main.nativeBounds.size.width)
         let height = Int(width * (9/16))
         

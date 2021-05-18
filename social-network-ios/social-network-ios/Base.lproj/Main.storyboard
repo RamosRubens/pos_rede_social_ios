@@ -18,31 +18,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="s6d-YJ-sGc" kind="show" id="6nY-ce-1TD"/>
+                        <segue destination="I19-JA-xYm" kind="relationship" relationship="rootViewController" id="jUa-qz-24y"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wK4-OL-9fX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-459.4202898550725" y="92.410714285714278"/>
         </scene>
-        <!--Social Table View Controller-->
-        <scene sceneID="mas-au-5Z5">
+        <!--Social-->
+        <scene sceneID="Oag-eV-d6T">
             <objects>
-                <tableViewController id="s6d-YJ-sGc" customClass="SocialTableViewController" customModule="social_network_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="c2G-Zu-dFl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <tableViewController id="I19-JA-xYm" customClass="SocialTableViewController" customModule="social_network_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QBf-Pk-hpj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <connections>
-                            <outlet property="dataSource" destination="s6d-YJ-sGc" id="L5U-uk-FUi"/>
-                            <outlet property="delegate" destination="s6d-YJ-sGc" id="IQt-JM-Gph"/>
+                            <outlet property="dataSource" destination="I19-JA-xYm" id="mYl-oN-lxq"/>
+                            <outlet property="delegate" destination="I19-JA-xYm" id="MJT-mq-fZs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="r1n-Gf-2Jk"/>
+                    <navigationItem key="navigationItem" title="Social" id="0rk-r6-B20"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NpR-6X-eEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSS-jB-179" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311.59420289855075" y="91.741071428571431"/>
+            <point key="canvasLocation" x="303" y="92"/>
         </scene>
     </scenes>
     <resources>
