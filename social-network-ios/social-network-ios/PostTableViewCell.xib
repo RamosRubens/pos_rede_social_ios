@@ -105,7 +105,7 @@
                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATU-vg-Gxu">
-                        <rect key="frame" x="8" y="339" width="353" height="48"/>
+                        <rect key="frame" x="8" y="339" width="361" height="48"/>
                         <string key="text">A label can contain an arbitrary amount of text, but UILabel may shrink, wrap, or truncate the text, depending on the size of the bounding rectangle and properties you set. You can control the font, text color, alignment, highlighting, and shadowing of the text in the label.</string>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -147,7 +147,7 @@
                     <constraint firstItem="Ral-8i-HDi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Iho-AG-pOc"/>
                     <constraint firstItem="3CZ-7f-QW2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Pg2-ip-EIn"/>
                     <constraint firstItem="1e6-Xe-rh5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="PwU-fV-YbG"/>
-                    <constraint firstAttribute="trailing" secondItem="ATU-vg-Gxu" secondAttribute="trailing" constant="8" id="QhO-8V-bps"/>
+                    <constraint firstAttribute="trailing" secondItem="ATU-vg-Gxu" secondAttribute="trailing" id="QhO-8V-bps"/>
                     <constraint firstAttribute="trailing" secondItem="3CZ-7f-QW2" secondAttribute="trailing" constant="8" id="S0Q-Fg-VB1"/>
                     <constraint firstItem="ATU-vg-Gxu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Vgi-0v-1jb"/>
                     <constraint firstItem="fcI-hK-wOC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="c0H-9a-NzE"/>
