@@ -17,6 +17,12 @@
 		253933252652F38F00BD11DA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253933232652F38F00BD11DA /* PostTableViewCell.swift */; };
 		253933262652F38F00BD11DA /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253933242652F38F00BD11DA /* PostTableViewCell.xib */; };
 		253933282653123900BD11DA /* SocialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253933272653123900BD11DA /* SocialTableViewController.swift */; };
+		2541768326674B9E00D7894D /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768226674B9E00D7894D /* PhotosCollectionViewController.swift */; };
+		2541768626674DDA00D7894D /* Albuns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768526674DDA00D7894D /* Albuns.swift */; };
+		2541768826674E2A00D7894D /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768726674E2A00D7894D /* Follower.swift */; };
+		2541768A26674E4200D7894D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768926674E4200D7894D /* Post.swift */; };
+		2541768D2667519200D7894D /* FollowersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768C2667519200D7894D /* FollowersTableViewController.swift */; };
+		2541768F2667529300D7894D /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768E2667529300D7894D /* FollowerTableViewCell.swift */; };
 		2570D81F265DF7CA00822318 /* imageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570D81E265DF7CA00822318 /* imageDownloader.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,12 @@
 		253933232652F38F00BD11DA /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		253933242652F38F00BD11DA /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		253933272653123900BD11DA /* SocialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewController.swift; sourceTree = "<group>"; };
+		2541768226674B9E00D7894D /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		2541768526674DDA00D7894D /* Albuns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albuns.swift; sourceTree = "<group>"; };
+		2541768726674E2A00D7894D /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		2541768926674E4200D7894D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2541768C2667519200D7894D /* FollowersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersTableViewController.swift; sourceTree = "<group>"; };
+		2541768E2667529300D7894D /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
 		2570D81E265DF7CA00822318 /* imageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +117,7 @@
 		253932EE2652D31000BD11DA /* social-network-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2541768426674D8400D7894D /* Models */,
 				253932EF2652D31000BD11DA /* AppDelegate.swift */,
 				253932F12652D31000BD11DA /* SceneDelegate.swift */,
 				253932F52652D31000BD11DA /* Main.storyboard */,
@@ -115,6 +128,9 @@
 				253933242652F38F00BD11DA /* PostTableViewCell.xib */,
 				253933272653123900BD11DA /* SocialTableViewController.swift */,
 				2570D81E265DF7CA00822318 /* imageDownloader.swift */,
+				2541768226674B9E00D7894D /* PhotosCollectionViewController.swift */,
+				2541768C2667519200D7894D /* FollowersTableViewController.swift */,
+				2541768E2667529300D7894D /* FollowerTableViewCell.swift */,
 			);
 			path = "social-network-ios";
 			sourceTree = "<group>";
@@ -135,6 +151,16 @@
 				253933132652D31900BD11DA /* Info.plist */,
 			);
 			path = "social-network-iosUITests";
+			sourceTree = "<group>";
+		};
+		2541768426674D8400D7894D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2541768526674DDA00D7894D /* Albuns.swift */,
+				2541768726674E2A00D7894D /* Follower.swift */,
+				2541768926674E4200D7894D /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				253933282653123900BD11DA /* SocialTableViewController.swift in Sources */,
+				2541768626674DDA00D7894D /* Albuns.swift in Sources */,
+				2541768F2667529300D7894D /* FollowerTableViewCell.swift in Sources */,
 				253932F02652D31000BD11DA /* AppDelegate.swift in Sources */,
+				2541768826674E2A00D7894D /* Follower.swift in Sources */,
 				253932F22652D31000BD11DA /* SceneDelegate.swift in Sources */,
+				2541768D2667519200D7894D /* FollowersTableViewController.swift in Sources */,
+				2541768326674B9E00D7894D /* PhotosCollectionViewController.swift in Sources */,
+				2541768A26674E4200D7894D /* Post.swift in Sources */,
 				2570D81F265DF7CA00822318 /* imageDownloader.swift in Sources */,
 				253933252652F38F00BD11DA /* PostTableViewCell.swift in Sources */,
 			);
