@@ -10,6 +10,7 @@ import UIKit
 class PostTableViewCell: UITableViewCell {
     
     static let kreuseIdentifier = "PostTableViewCell"
+    
 
     @IBOutlet weak var profilePictureImageView: UIImageView!
     @IBOutlet weak var displayLabel: UILabel!
@@ -43,17 +44,14 @@ class PostTableViewCell: UITableViewCell {
         tableView.register(nib, forCellReuseIdentifier: kreuseIdentifier)
     }
     
-    func setup(with data: String){
-        postBody.text = data
+    func setup(with data: String, imagePost: UIImage, profileImage: UIImage){
+//        postBody.text = data
         
-        profilePictureImageView.image = UIImage(data: try! Data(contentsOf: URL(string: "https://picsum.photos/120/120")!))
+        profilePictureImageView.image = profileImage
         profilePictureImageView.layer.masksToBounds = true
         profilePictureImageView.layer.cornerRadius = profilePictureImageView.bounds.width / 2
-
-        let width = Int(UIScreen.main.nativeBounds.size.width)
-        let height = Int(width * (9/16))
         
-        postImage.image = UIImage(data: try! Data(contentsOf: URL(string: "https://picsum.photos/\(width)/\(height)")!))
+        postImage.image = imagePost
         
     }
 }

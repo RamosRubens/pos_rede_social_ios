@@ -17,6 +17,7 @@
 		253933252652F38F00BD11DA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253933232652F38F00BD11DA /* PostTableViewCell.swift */; };
 		253933262652F38F00BD11DA /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253933242652F38F00BD11DA /* PostTableViewCell.xib */; };
 		253933282653123900BD11DA /* SocialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253933272653123900BD11DA /* SocialTableViewController.swift */; };
+		2570D81F265DF7CA00822318 /* imageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570D81E265DF7CA00822318 /* imageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		253933232652F38F00BD11DA /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		253933242652F38F00BD11DA /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		253933272653123900BD11DA /* SocialTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTableViewController.swift; sourceTree = "<group>"; };
+		2570D81E265DF7CA00822318 /* imageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				253933232652F38F00BD11DA /* PostTableViewCell.swift */,
 				253933242652F38F00BD11DA /* PostTableViewCell.xib */,
 				253933272653123900BD11DA /* SocialTableViewController.swift */,
+				2570D81E265DF7CA00822318 /* imageDownloader.swift */,
 			);
 			path = "social-network-ios";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				253933282653123900BD11DA /* SocialTableViewController.swift in Sources */,
 				253932F02652D31000BD11DA /* AppDelegate.swift in Sources */,
 				253932F22652D31000BD11DA /* SceneDelegate.swift in Sources */,
+				2570D81F265DF7CA00822318 /* imageDownloader.swift in Sources */,
 				253933252652F38F00BD11DA /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
