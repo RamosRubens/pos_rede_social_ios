@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25241F5A266AA19B009628C5 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25241F59266AA19B009628C5 /* AlbumViewController.swift */; };
+		25241F5C266AA330009628C5 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25241F5B266AA330009628C5 /* AlbumTableViewCell.swift */; };
+		25241F60266AA379009628C5 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25241F5F266AA379009628C5 /* AlbumCollectionViewCell.swift */; };
 		253932F02652D31000BD11DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253932EF2652D31000BD11DA /* AppDelegate.swift */; };
 		253932F22652D31000BD11DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253932F12652D31000BD11DA /* SceneDelegate.swift */; };
 		253932F72652D31000BD11DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253932F52652D31000BD11DA /* Main.storyboard */; };
@@ -23,6 +26,7 @@
 		2541768A26674E4200D7894D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768926674E4200D7894D /* Post.swift */; };
 		2541768D2667519200D7894D /* FollowersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768C2667519200D7894D /* FollowersTableViewController.swift */; };
 		2541768F2667529300D7894D /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2541768E2667529300D7894D /* FollowerTableViewCell.swift */; };
+		25417695266A881800D7894D /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25417694266A881800D7894D /* UIImageView+Extensions.swift */; };
 		2570D81F265DF7CA00822318 /* imageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570D81E265DF7CA00822318 /* imageDownloader.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25241F59266AA19B009628C5 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		25241F5B266AA330009628C5 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		25241F5F266AA379009628C5 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		253932EC2652D31000BD11DA /* social-network-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "social-network-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		253932EF2652D31000BD11DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		253932F12652D31000BD11DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +73,7 @@
 		2541768926674E4200D7894D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2541768C2667519200D7894D /* FollowersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersTableViewController.swift; sourceTree = "<group>"; };
 		2541768E2667529300D7894D /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
+		25417694266A881800D7894D /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extensions.swift"; path = "../../social-app-ios/social/Extensios/UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		2570D81E265DF7CA00822318 /* imageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,12 +133,16 @@
 				253932FA2652D31900BD11DA /* LaunchScreen.storyboard */,
 				253932FD2652D31900BD11DA /* Info.plist */,
 				253933232652F38F00BD11DA /* PostTableViewCell.swift */,
+				25417694266A881800D7894D /* UIImageView+Extensions.swift */,
 				253933242652F38F00BD11DA /* PostTableViewCell.xib */,
 				253933272653123900BD11DA /* SocialTableViewController.swift */,
 				2570D81E265DF7CA00822318 /* imageDownloader.swift */,
 				2541768226674B9E00D7894D /* PhotosCollectionViewController.swift */,
 				2541768C2667519200D7894D /* FollowersTableViewController.swift */,
 				2541768E2667529300D7894D /* FollowerTableViewCell.swift */,
+				25241F59266AA19B009628C5 /* AlbumViewController.swift */,
+				25241F5B266AA330009628C5 /* AlbumTableViewCell.swift */,
+				25241F5F266AA379009628C5 /* AlbumCollectionViewCell.swift */,
 			);
 			path = "social-network-ios";
 			sourceTree = "<group>";
@@ -296,13 +308,17 @@
 			files = (
 				253933282653123900BD11DA /* SocialTableViewController.swift in Sources */,
 				2541768626674DDA00D7894D /* Albuns.swift in Sources */,
+				25241F5A266AA19B009628C5 /* AlbumViewController.swift in Sources */,
 				2541768F2667529300D7894D /* FollowerTableViewCell.swift in Sources */,
 				253932F02652D31000BD11DA /* AppDelegate.swift in Sources */,
 				2541768826674E2A00D7894D /* Follower.swift in Sources */,
 				253932F22652D31000BD11DA /* SceneDelegate.swift in Sources */,
 				2541768D2667519200D7894D /* FollowersTableViewController.swift in Sources */,
+				25417695266A881800D7894D /* UIImageView+Extensions.swift in Sources */,
+				25241F60266AA379009628C5 /* AlbumCollectionViewCell.swift in Sources */,
 				2541768326674B9E00D7894D /* PhotosCollectionViewController.swift in Sources */,
 				2541768A26674E4200D7894D /* Post.swift in Sources */,
+				25241F5C266AA330009628C5 /* AlbumTableViewCell.swift in Sources */,
 				2570D81F265DF7CA00822318 /* imageDownloader.swift in Sources */,
 				253933252652F38F00BD11DA /* PostTableViewCell.swift in Sources */,
 			);

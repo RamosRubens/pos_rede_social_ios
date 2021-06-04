@@ -45,7 +45,17 @@ class FollowersTableViewController: UITableViewController {
             
             
         }
-        
+    
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let identifier = segue.identifier, identifier == "onFollowerSegue" {
+                print("Sender: \(sender ?? "não veio!")")
+                if let followerCell = sender as? FollowerTableViewCell, let follower = followerCell.follower {
+                    let albumViewController = segue.destination as! AlbumViewController
+                    albumViewController.followerId = follower.id
+
+                }
+            }
+        }
         
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return followers.count

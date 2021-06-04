@@ -3,7 +3,9 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -143,6 +145,7 @@
                                 <connections>
                                     <outlet property="email" destination="T0w-AR-5EU" id="3Az-tk-upz"/>
                                     <outlet property="nome" destination="cJO-dX-v3W" id="Zz7-pJ-JvG"/>
+                                    <segue destination="byS-xP-N7g" kind="show" identifier="onFollowerSegue" id="pqH-7e-xwT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -156,6 +159,106 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4q-lN-oWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="599" y="-447"/>
+        </scene>
+        <!--Album View Controller-->
+        <scene sceneID="Dgx-tR-0Tk">
+            <objects>
+                <viewController id="byS-xP-N7g" customClass="AlbumViewController" customModule="social_network_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iUJ-fF-Kgj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tUx-ak-Gpv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumTableCell" rowHeight="214" id="c0Y-AP-J37" customClass="AlbumTableViewCell" customModule="social_network_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="214"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c0Y-AP-J37" id="owZ-wj-xI9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2is-Ly-Rw5">
+                                                    <rect key="frame" x="28" y="19" width="58" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name album" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEE-ae-PlW">
+                                                    <rect key="frame" x="110" y="19" width="94" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qO5-FY-2wx">
+                                                    <rect key="frame" x="20" y="58" width="374" height="145"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LPQ-q7-qdm">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="albumCollection" id="DHz-Ki-ZuY" customClass="AlbumCollectionViewCell" customModule="social_network_ios" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="8.5" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nbE-fY-WaJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lhC-5b-UMP">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="lhC-5b-UMP" secondAttribute="bottom" id="Kyw-GD-CeY"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="lhC-5b-UMP" secondAttribute="trailing" id="dEQ-IL-0P3"/>
+                                                                    <constraint firstItem="lhC-5b-UMP" firstAttribute="leading" secondItem="nbE-fY-WaJ" secondAttribute="leading" id="sTD-MD-9Ma"/>
+                                                                    <constraint firstItem="lhC-5b-UMP" firstAttribute="top" secondItem="nbE-fY-WaJ" secondAttribute="top" id="spD-oX-tDn"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="imageAlbum" destination="lhC-5b-UMP" id="mkZ-OK-KiK"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fEE-ae-PlW" firstAttribute="leading" secondItem="2is-Ly-Rw5" secondAttribute="trailing" constant="24" id="81b-Rc-qgV"/>
+                                                <constraint firstItem="fEE-ae-PlW" firstAttribute="top" secondItem="owZ-wj-xI9" secondAttribute="topMargin" constant="8" id="9Wg-j1-ncT"/>
+                                                <constraint firstItem="qO5-FY-2wx" firstAttribute="top" secondItem="2is-Ly-Rw5" secondAttribute="bottom" constant="18" id="D1A-gA-Dez"/>
+                                                <constraint firstItem="2is-Ly-Rw5" firstAttribute="top" secondItem="owZ-wj-xI9" secondAttribute="topMargin" constant="8" id="ESG-Zh-ThP"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qO5-FY-2wx" secondAttribute="bottom" id="Ktr-we-xP5"/>
+                                                <constraint firstItem="2is-Ly-Rw5" firstAttribute="leading" secondItem="owZ-wj-xI9" secondAttribute="leadingMargin" constant="8" id="MVq-lu-nse"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qO5-FY-2wx" secondAttribute="trailing" id="PDZ-MD-qjB"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="fEE-ae-PlW" secondAttribute="trailing" constant="190" id="PrQ-dr-yRN"/>
+                                                <constraint firstItem="qO5-FY-2wx" firstAttribute="leading" secondItem="owZ-wj-xI9" secondAttribute="leadingMargin" id="ZvQ-k8-97D"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="albumName" destination="fEE-ae-PlW" id="SkR-ni-6Gf"/>
+                                            <outlet property="albumTitle" destination="2is-Ly-Rw5" id="0P5-1h-5z6"/>
+                                            <outlet property="collectionAlbum" destination="qO5-FY-2wx" id="HRr-3x-NHg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rHi-Go-UeH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IoR-LM-C2h"/>
+                    <connections>
+                        <outlet property="albumTableView" destination="tUx-ak-Gpv" id="FAv-5c-tjU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDg-qT-PYR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560.8695652173915" y="-447.32142857142856"/>
         </scene>
     </scenes>
     <resources>
